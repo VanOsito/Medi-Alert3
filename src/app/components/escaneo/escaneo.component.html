@@ -1,3 +1,17 @@
 <ion-content class="ion-padding ion-text-center">
-  <img src="/assets/icon/fondo 2 copia.jpg" class="img-fluid" style="position: absolute; right: 0; top: 0; z-index: -100; ">
-</ion-content>
+  <img src="/assets/icon/fondo 2 copia.jpg" class="img-fluid" style="position: absolute; right: 0; top: 0; z-index: -100;">
+  
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+    </ion-fab-button>  
+  </ion-fab>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+        <ion-img [src]="photo.webviewPath"></ion-img>
+        <ion-button color="danger" (click)="deletePhoto(position)" shape="round" color=purple >Eliminar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
