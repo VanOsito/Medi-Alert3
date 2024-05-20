@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img src="\assets\icon\Encabezado.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-align-items-center">
+  <img src="/assets/icon/fondo.jpg" class="img-fluid" style="position: absolute; right: 0; top: 0; z-index: -100; ">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="card-container" style="display: flex; justify-content: center;">
+    <ion-card>
+      <ion-row>
+        <ion-col size-md="3" size="12" class="ion-padding ion-blue-bkg">
+          <img
+            src="\assets\icon\logo MA.png"
+            alt="Ionic logo"
+            loading="lazy"
+            width="0%"
+          />
+        </ion-col>
+        <ion-col size-md="9" size="12" >
+            <ion-title size="large">
+            <ion-text class="ion-text-center" style="font-family: 'Bebas Neue', sans-serif"><h2>Usuario: {{ nombre }} {{apellido}}</h2></ion-text>
+            <ion-text class="ion-text-center" style="font-family: 'Bebas Neue', sans-serif"><h2>{{preguntaSecreta}}</h2></ion-text>
+          </ion-title>
+          <ion-card-content>
+            <ion-item>
+              <ion-item class="ion-margin-top">
+                <ion-input label="Ingrese Respuesta: " labelplacement="floating" [(ngModel)]="respuestaSecreta"></ion-input>
+              </ion-item>
+            </ion-item>
+            <ion-row>
+              <ion-col size="12">
+                <br>
+                <ion-button (click)="recuperarContrasena()" shape="round" color=purple >Recuperar Contraseña</ion-button>
+                <ion-button (click)="volverAlInicio()" shape="round" color=purple> Volver al Inicio</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+

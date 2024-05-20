@@ -1,0 +1,51 @@
+ion-title.title-large {
+    color: #c897d8;
+    font-size: 30px;
+  }
+  
+  ion-title {
+    --color: #000;
+  }
+  
+  ion-toolbar {
+    --background: #c897d8;
+  }
+  
+  .full-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Agrega posición relativa para que los elementos secundarios se posicionen correctamente */
+  }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  ion-title {
+    text-align: center;
+  }
+  ion-button {
+    width: 100%;
+    background-color: purple;
+    border-radius: 20px;
+  }
+  h4 {
+    color: #fff;
+  }
+  
