@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999507207053",
+    "project_id": "mediapp-34ebe",
+    "storage_bucket": "mediapp-34ebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999507207053:android:35c56cebcc7842ba5893c4",
+        "android_client_info": {
+          "package_name": "com.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcDMLkIqwTzmBe8HjZacoX_TKClh0hyXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

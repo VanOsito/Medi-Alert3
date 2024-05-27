@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
     FormsModule, 
     EscaneoComponent,
     FarmaciaComponent,
-    CalendarioComponent
+    CalendarioComponent,
   ]
 })
 export class InicioPage implements OnInit {

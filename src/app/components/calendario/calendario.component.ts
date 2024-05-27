@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
 })
 export class CalendarioComponent  implements OnInit {
   public datetime: string | undefined;
+  newNoteContent: string = '';
+  notes: { content: string }[] = [];
 
   // isWeekday = (dateString: string) => {
   //   const date = new Date(dateString);
@@ -39,5 +41,16 @@ export class CalendarioComponent  implements OnInit {
     date.setDate(date.getDate() + dayChange);
     this.datetime = date.toISOString();
   }
+  addNote() {
+    if (this.newNoteContent.trim().length > 0) {
+      this.notes.push({ content: this.newNoteContent });
+      this.newNoteContent = '';
+    }
+  }
+
+  deleteNote(index: number) {
+    this.notes.splice(index, 1);
+  }
+  
 }
 
